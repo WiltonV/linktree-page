@@ -1,24 +1,35 @@
-"use client"
+"use client";
 
 import {
   InstagramIcon,
-  TwitterIcon,
-  LinkedInIcon,
-  YouTubeIcon,
   SpotifyIcon,
-} from "@/components/social-icons"
+  WhatsAppIcon,
+  EmailIcon,
+} from "@/components/social-icons";
+import { assetPath } from "@/lib/utils";
+import Image from "next/image";
 
 const socialLinks = [
-  { href: "https://instagram.com", icon: InstagramIcon, label: "Instagram" },
-  { href: "https://twitter.com", icon: TwitterIcon, label: "X / Twitter" },
-  { href: "https://linkedin.com", icon: LinkedInIcon, label: "LinkedIn" },
-  { href: "https://youtube.com", icon: YouTubeIcon, label: "YouTube" },
+  {
+    href: "https://wa.me/5598991328659",
+    icon: WhatsAppIcon,
+    label: "WhatsApp",
+  },
+  {
+    href: "https://instagram.com/deborae.fisio/",
+    icon: InstagramIcon,
+    label: "Instagram",
+  },
+  { href: "mailto:contato@defisio.com", icon: EmailIcon, label: "Email" },
   { href: "https://spotify.com", icon: SpotifyIcon, label: "Spotify" },
-]
+];
 
 export function SocialFooter() {
   return (
-    <footer className="flex flex-col items-center gap-6 opacity-0 animate-fade-in-up" style={{ animationDelay: "800ms" }}>
+    <footer
+      className="flex flex-col items-center gap-6 opacity-0 animate-fade-in-up"
+      style={{ animationDelay: "800ms" }}
+    >
       <div className="flex items-center gap-3">
         {socialLinks.map((link) => (
           <a
@@ -33,9 +44,14 @@ export function SocialFooter() {
           </a>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground/60 font-mono">
-        &copy; {new Date().getFullYear()} &middot; Feito com carinho
-      </p>
+      <Image
+        src={assetPath("/DE-Reduzida-Typo-Branco.png")}
+        alt="Foto de perfil"
+        width={250}
+        height={250}
+        // className="relative rounded-full border-2 border-primary/30 object-cover"
+        priority
+      />
     </footer>
-  )
+  );
 }

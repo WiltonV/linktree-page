@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/linktree-page",
+  basePath: "/linktree-page", // Comentado para desenvolvimento local
   typescript: {
     ignoreBuildErrors: true,
   },

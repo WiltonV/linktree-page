@@ -1,60 +1,60 @@
-import { ProfileHeader } from "@/components/profile-header"
-import { LinkCard } from "@/components/link-card"
-import { SocialFooter } from "@/components/social-footer"
+import { ProfileHeader } from "@/components/profile-header";
+import { LinkCard } from "@/components/link-card";
+import { SocialFooter } from "@/components/social-footer";
 import {
   WhatsAppIcon,
   InstagramIcon,
   EmailIcon,
-  YouTubeIcon,
-  TikTokIcon,
-  GlobeIcon,
+  // YouTubeIcon,
+  // TikTokIcon,
+  // GlobeIcon,
   SpotifyIcon,
-} from "@/components/social-icons"
+} from "@/components/social-icons";
 
 const links = [
   {
-    href: "https://wa.me/5511999999999",
+    href: "https://wa.me/5598991328659",
     icon: <WhatsAppIcon className="h-5 w-5" />,
     label: "WhatsApp",
     description: "Fale comigo diretamente",
   },
   {
-    href: "https://instagram.com",
+    href: "https://instagram.com/deborae.fisio/",
     icon: <InstagramIcon className="h-5 w-5" />,
     label: "Instagram",
-    description: "@anacarolina",
+    description: "@deborae.fisio",
   },
   {
-    href: "mailto:contato@anacarolina.com",
+    href: "mailto:contato@defisio.com",
     icon: <EmailIcon className="h-5 w-5" />,
     label: "E-mail",
-    description: "contato@anacarolina.com",
+    description: "contato@defisio.com",
   },
-  {
-    href: "https://youtube.com",
-    icon: <YouTubeIcon className="h-5 w-5" />,
-    label: "YouTube",
-    description: "Meu canal de videos",
-  },
-  {
-    href: "https://tiktok.com",
-    icon: <TikTokIcon className="h-5 w-5" />,
-    label: "TikTok",
-    description: "Conteudo rapido e divertido",
-  },
+  // {
+  //   href: "https://youtube.com",
+  //   icon: <YouTubeIcon className="h-5 w-5" />,
+  //   label: "YouTube",
+  //   description: "Meu canal de videos",
+  // },
+  // {
+  //   href: "https://tiktok.com",
+  //   icon: <TikTokIcon className="h-5 w-5" />,
+  //   label: "TikTok",
+  //   description: "Conteudo rapido e divertido",
+  // },
   {
     href: "https://spotify.com",
     icon: <SpotifyIcon className="h-5 w-5" />,
     label: "Spotify",
     description: "Minhas playlists favoritas",
   },
-  {
-    href: "https://meusite.com",
-    icon: <GlobeIcon className="h-5 w-5" />,
-    label: "Meu Site",
-    description: "Portfolio e projetos",
-  },
-]
+  // {
+  //   href: "https://meusite.com",
+  //   icon: <GlobeIcon className="h-5 w-5" />,
+  //   label: "Meu Site",
+  //   description: "Portfolio e projetos",
+  // },
+];
 
 export default function Page() {
   return (
@@ -63,7 +63,8 @@ export default function Page() {
       <div
         className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[500px] rounded-full opacity-[0.07]"
         style={{
-          background: "radial-gradient(circle, hsl(168 70% 50%) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, hsl(168 70% 50%) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -71,7 +72,10 @@ export default function Page() {
       <div className="relative z-10 flex w-full max-w-md flex-col gap-8">
         <ProfileHeader />
 
-        <nav className="flex flex-col gap-3" aria-label="Links de contato e redes sociais">
+        <nav
+          className="flex flex-col gap-3"
+          aria-label="Links de contato e redes sociais"
+        >
           {links.map((link, index) => (
             <LinkCard
               key={link.label}
@@ -87,5 +91,5 @@ export default function Page() {
         <SocialFooter />
       </div>
     </main>
-  )
+  );
 }
