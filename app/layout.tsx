@@ -5,10 +5,10 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { assetPath } from "@/lib/utils";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ 
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
-  weight: ["300", "400", "500", "600", "700"]
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${plusJakartaSans.variable} font-sans antialiased min-h-screen`}>{children}</body>
+      <body
+        className={`${plusJakartaSans.variable} font-sans antialiased min-h-screen`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
