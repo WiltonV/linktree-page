@@ -42,12 +42,12 @@ const links = [
   //   label: "TikTok",
   //   description: "Conteudo rapido e divertido",
   // },
-  {
-    href: "https://spotify.com",
-    icon: <SpotifyIcon className="h-5 w-5" />,
-    label: "Spotify",
-    description: "Minhas playlists favoritas",
-  },
+  // {
+  //   href: "https://spotify.com",
+  //   icon: <SpotifyIcon className="h-5 w-5" />,
+  //   label: "Spotify",
+  //   description: "Minhas playlists favoritas",
+  // },
   // {
   //   href: "https://meusite.com",
   //   icon: <GlobeIcon className="h-5 w-5" />,

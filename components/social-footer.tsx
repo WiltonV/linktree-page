@@ -21,7 +21,7 @@ const socialLinks = [
     label: "Instagram",
   },
   { href: "mailto:contato@defisio.com", icon: EmailIcon, label: "Email" },
-  { href: "https://spotify.com", icon: SpotifyIcon, label: "Spotify" },
+  // { href: "https://spotify.com", icon: SpotifyIcon, label: "Spotify" },
 ];
 
 export function SocialFooter() {

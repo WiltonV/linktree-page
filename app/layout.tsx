@@ -12,7 +12,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Meus Links",
+  title: "Débora Eduarda - Fisioterapeuta",
   description: "Todos os meus links em um so lugar",
   icons: {
     icon: assetPath("/DE-Reduzida.svg"),
