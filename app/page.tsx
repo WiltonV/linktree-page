@@ -61,7 +61,7 @@ export default function Page() {
     <main className="relative flex min-h-screen flex-col items-center justify-start px-4 py-12 sm:py-16">
       {/* Subtle background glow */}
       <div
-        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[500px] rounded-full opacity-[0.07]"
+        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[300px] w-[300px] sm:h-[500px] sm:w-[500px] max-w-[90vw] rounded-full opacity-[0.07]"
         style={{
           background:
             "radial-gradient(circle, hsl(168 70% 50%) 0%, transparent 70%)",
